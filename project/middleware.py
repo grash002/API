@@ -14,7 +14,7 @@ class LogRequestMiddleware:
             message=f'API Request: {request.method} {request.path}',
             request_path=request.path,
             request_method=request.method,
-            user=request.user.username if request.user.is_authenticated else 'Anonymous'
+            user_name=request.user.username if request.user.is_authenticated else 'Anonymous'
         )
 
         response = self.get_response(request)
