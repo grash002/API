@@ -135,3 +135,22 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'db': {
+            'level': 'DEBUG',  # Можно изменить на нужный уровень
+            'class': 'django.utils.log.DatabaseLogHandler',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['db'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}

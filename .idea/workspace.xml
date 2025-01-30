@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d715a3d-f4cb-4ea6-92b3-5b38153ac6c2" name="Changes" comment="add register method" />
+    <list default="true" id="3d715a3d-f4cb-4ea6-92b3-5b38153ac6c2" name="Changes" comment="add allowed host">
+      <change afterPath="$PROJECT_DIR$/project/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -153,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738252539250</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add allowed host">
+      <option name="closed" value="true" />
+      <created>1738254816974</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1738254816974</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -162,6 +173,7 @@
     <MESSAGE value="add db settings" />
     <MESSAGE value="add psycopg2 req" />
     <MESSAGE value="add register method" />
-    <option name="LAST_COMMIT_MESSAGE" value="add register method" />
+    <MESSAGE value="add allowed host" />
+    <option name="LAST_COMMIT_MESSAGE" value="add allowed host" />
   </component>
 </project>
