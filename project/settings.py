@@ -144,7 +144,7 @@ LOGGING = {
     'handlers': {
         'db': {
             'level': 'DEBUG',  # Можно изменить на нужный уровень
-            'class': 'api.utils.DatabaseLogHandler',
+            'class': 'project.utils.DatabaseLogHandler',
         },
     },
     'loggers': {
