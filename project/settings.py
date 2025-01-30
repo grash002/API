@@ -141,17 +141,39 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {message}',
+            'style': '{',
+        },
+        'simple': {
+            'format': '{levelname} {message}',
+            'style': '{',
+        },
+    },
     'handlers': {
-        'db': {
-            'level': 'DEBUG',  # Можно изменить на нужный уровень
-            'class': 'project.utils.DatabaseLogHandler',
+        'console': {
+            'level': 'INFO',  # Устанавливаем минимальный уровень на INFO
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple',
+        },
+        'file': {
+            'level': 'INFO',  # Устанавливаем минимальный уровень на INFO
+            'class': 'logging.FileHandler',
+            'filename': 'django.log',
+            'formatter': 'verbose',
         },
     },
     'loggers': {
         'django': {
-            'handlers': ['db'],
-            'level': 'DEBUG',
+            'handlers': ['console', 'file'],
+            'level': 'INFO',  # Устанавливаем минимальный уровень на INFO
             'propagate': True,
+        },
+        'django.db.backends': {
+            'level': 'ERROR',  # Для базы данных логируем только ошибки
+            'handlers': ['console'],
+            'propagate': False,
         },
     },
 }
