@@ -58,6 +58,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'project.middleware.LogRequestMiddleware',
 ]
 
 ROOT_URLCONF = 'project.urls'
@@ -153,12 +154,12 @@ LOGGING = {
     },
     'handlers': {
         'console': {
-            'level': 'INFO',  # Устанавливаем минимальный уровень на INFO
+            'level': 'INFO',  # Логируем с уровня INFO
             'class': 'logging.StreamHandler',
             'formatter': 'simple',
         },
         'file': {
-            'level': 'INFO',  # Устанавливаем минимальный уровень на INFO
+            'level': 'INFO',  # Логируем с уровня INFO
             'class': 'logging.FileHandler',
             'filename': 'django.log',
             'formatter': 'verbose',
@@ -167,13 +168,18 @@ LOGGING = {
     'loggers': {
         'django': {
             'handlers': ['console', 'file'],
-            'level': 'INFO',  # Устанавливаем минимальный уровень на INFO
+            'level': 'INFO',  # Логируем на уровне INFO и выше
             'propagate': True,
         },
         'django.db.backends': {
             'level': 'ERROR',  # Для базы данных логируем только ошибки
             'handlers': ['console'],
             'propagate': False,
+        },
+        'django.request': {
+            'handlers': ['console', 'file'],  # Логируем запросы
+            'level': 'INFO',  # Логируем с уровня INFO
+            'propagate': True,
         },
     },
 }
