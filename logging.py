@@ -3,6 +3,7 @@ from project.models import Log  # Импортируем модель, кото�
 
 class DatabaseLogHandler(logging.Handler):
     def emit(self, record):
+        from project.models import Log
         try:
             # Формируем сообщение лога
             log_message = self.format(record)

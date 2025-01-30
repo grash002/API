@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d715a3d-f4cb-4ea6-92b3-5b38153ac6c2" name="Changes" comment="add logging">
-      <change beforePath="$PROJECT_DIR$/project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="3d715a3d-f4cb-4ea6-92b3-5b38153ac6c2" name="Changes" comment="add logging" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +54,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\grashik\Documents\projectGit\API" />
       <recent name="C:\Users\grashik\Documents\projectGit\API\project" />
     </key>
   </component>
@@ -179,7 +178,47 @@
       <option name="project" value="LOCAL" />
       <updated>1738256906247</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add logging">
+      <option name="closed" value="true" />
+      <created>1738256944148</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1738256944148</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add logging">
+      <option name="closed" value="true" />
+      <created>1738257007573</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1738257007573</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add logging">
+      <option name="closed" value="true" />
+      <created>1738257082680</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1738257082680</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add logging">
+      <option name="closed" value="true" />
+      <created>1738257133096</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1738257133096</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add logging">
+      <option name="closed" value="true" />
+      <created>1738257173697</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1738257173697</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
