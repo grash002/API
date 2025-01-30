@@ -143,7 +143,7 @@ LOGGING = {
     'handlers': {
         'db': {
             'level': 'DEBUG',  # Можно изменить на нужный уровень
-            'class': 'django.utils.log.DatabaseLogHandler',
+            'class': 'api.DatabaseLogHandler',
         },
     },
     'loggers': {
