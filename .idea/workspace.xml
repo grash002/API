@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d715a3d-f4cb-4ea6-92b3-5b38153ac6c2" name="Changes" comment="modify update method">
+    <list default="true" id="3d715a3d-f4cb-4ea6-92b3-5b38153ac6c2" name="Changes" comment="add requirements.txt">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -382,19 +385,27 @@
       <option name="project" value="LOCAL" />
       <updated>1738319427675</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="add requirements.txt">
+      <option name="closed" value="true" />
+      <created>1738321767270</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1738321767270</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init project" />
-    <MESSAGE value="add requirements.txt" />
     <MESSAGE value="add db settings" />
     <MESSAGE value="add psycopg2 req" />
     <MESSAGE value="add register method" />
     <MESSAGE value="add allowed host" />
     <MESSAGE value="add logging" />
     <MESSAGE value="modify update method" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify update method" />
+    <MESSAGE value="add requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="add requirements.txt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
