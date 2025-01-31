@@ -33,15 +33,21 @@ class UpdateUserSerializer(serializers.ModelSerializer):
         fields = ['username', 'email', 'password']
 
     def update(self, instance, validated_data):
-        # Если есть новое имя пользователя, обновляем
+        # Создаем запись в истории
+        UserProfileHistory.objects.create(
+            user=instance,
+            username=validated_data.get('username', instance.username),
+            email=validated_data.get('email', instance.email),
+            password_hash=instance.password if 'password' not in validated_data else instance.set_password(validated_data['password'])
+        )
+
+        # Обновляем текущего пользователя
         if 'username' in validated_data:
             instance.username = validated_data['username']
 
-        # Если есть новый email, обновляем
         if 'email' in validated_data:
             instance.email = validated_data['email']
 
-        # Если есть новый пароль, обновляем
         if 'password' in validated_data:
             instance.set_password(validated_data['password'])
 
